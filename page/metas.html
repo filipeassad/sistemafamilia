@@ -1,0 +1,165 @@
+<div style="background: #232323; color: white; font-family: 'Titillium Web', sans-serif;">     
+    <div ng-include="'../page/includes/navbar.html'"></div>
+    <div class="container-fluid">
+        <h1 class="text-center">Metas de 2019 do Filipinho</h1>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-sm-6">
+                <div class="row">
+                    <h3 class="text-center">Progressos</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-11">
+                        <div>Progresso Total:</div>
+                        <div class="progress" style="margin-bottom: 0px;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                0%
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="row">
+                    <div class="col-sm-11">
+                        <div style="margin-top: 10px;">Progresso Profissional:</div>
+                        <div class="progress" style="margin-bottom: 0px;">
+                            <div class="progress-bar" style="width: 0%; background-color: #708090 !important;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                0%
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="row">
+                    <div class="col-sm-11">
+                        <div style="margin-top: 10px;">Progresso Financeiro:</div>
+                        <div class="progress" style="margin-bottom: 0px;"> 
+                            <div class="progress-bar" style="width: 0%; background-color: #00CED1 !important;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                0%
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="row">
+                    <div class="col-sm-11">
+                        <div style="margin-top: 10px;">Progresso Casa:</div>
+                        <div class="progress" style="margin-bottom: 0px;">
+                            <div class="progress-bar" style="width: 0%; background-color: #DAA520 !important;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                0%
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="row">
+                    <div class="col-sm-11">
+                        <div style="margin-top: 10px;">Progresso Bem-estar:</div>
+                        <div class="progress" style="margin-bottom: 0px;">
+                            <div class="progress-bar" style="width: 0%; background-color: #9400D3 !important;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                0%
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3 class="text-center">Tempo Restante</h3>
+                <table class="table" style="margin-bottom: 0;">
+                        <thead>
+                            <tr>
+                                <th class="text-center">DIA(S)</th>
+                                <th class="text-center">HORA(S)</th>
+                                <th class="text-center">MINUTOS(S)</th>
+                                <th class="text-center">SEGUNDOS(S)</th>                        
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr>
+                                <td>{{dias}}</td>      
+                                <td>{{horas}}</td>
+                                <td>{{minutos}}</td>
+                                <td>{{segundos}}</td>                  
+                            </tr>
+                        </tbody>
+                </table>               
+            </div>
+        </div>
+        <div class="row">
+            <h2 style="text-align: center;">Metas</h2>
+            <h5 style="text-align: center;">Segue as listas de metas para 2019 separadas por categorias. A medida que eu for completando essas metas, vou atualizar as listas e progredindo as barras de progressos.</h5>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">                
+                <h3 class="text-center" style="background: #708090;">Profissinal</h3>    
+                <ul>
+                    <li ng-repeat="metaProf in metasProfissionais">
+                        {{metaProf.descricao}} 
+                        <ul>
+                            <li ng-repeat="submeta in metaProf.submetas" > {{submeta}}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">             
+                <h3 class="text-center" style="background:#00CED1;">Financeiro</h3>
+                <ul>
+                    <li ng-repeat="metaFina in metasFinanceiras">
+                        {{metaFina.descricao}} 
+                        <ul>
+                            <li ng-repeat="submeta in metaFina.submetas" > {{submeta}}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">             
+                <h3 class="text-center" style="background: #DAA520;">Casa</h3>
+                <ul>
+                    <li ng-repeat="metaCasa in metasCasa">
+                        {{metaCasa.descricao}} 
+                        <ul>
+                            <li ng-repeat="submeta in metaCasa.submetas" > {{submeta}}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h3 class="text-center" style="background: #9400D3;">Bem-estar</h3>
+                <ul>
+                    <li ng-repeat="metaBem in metasBemEstar">
+                        {{metaBem.descricao}} 
+                        <ul>
+                            <li ng-repeat="submeta in metaBem.submetas" > {{submeta}}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+
+        <div class="row">
+            <h2 style="text-align: center;">Concluídos</h2>
+            <h5 style="text-align: center;">Lista de metas já concluídas. À medida que eu for cumprindo as metas, essa lista será atualizada.</h5>
+        </div>
+        <div class="row" style="margin-bottom: 50px;">            
+            <div class="col-sm-3">
+                <h3 class="text-center" style="background: #708090;">Profissinal</h3>    
+                <ul>
+                    <li>Nada;</li>                    
+                </ul>
+            </div>
+            <div class="col-sm-3">             
+                <h3 class="text-center" style="background:#00CED1;">Financeiro</h3>
+                <ul>
+                    <li>Nada;</li>
+                </ul>
+            </div>
+            <div class="col-sm-3"> 
+                <h3 class="text-center" style="background: #DAA520;">Casa</h3>
+                <ul>
+                    <li>Nada;</li>
+                </ul>
+            </div>
+            <div class="col-sm-3" > 
+                <h3 class="text-center" style="background: #9400D3;">Bem-estar</h3>
+                <ul>
+                    <li>Nada;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div style="background: #232323; color: white; font-family: 'Titillium Web', sans-serif;">
+    <div ng-include="'../page/includes/navbar.html'"></div>
+    
+    <h1 style="text-align: center;">Cardápio Semanal</h1>
+    <h5 style="text-align: center;">Mapeamento dos pratos que serão servidos durante a semana na nossa família.</h5>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <table class="table table-bordered" style="margin-top: 20px;">
+                        <thead>
+                            <tr>
+                                <th class="text-center col-sm-1" style="background:#9400D3;">SEGUNDA</th>
+                                <th class="text-center col-sm-1" style="background:#9400D3;">TERÇA</th>
+                                <th class="text-center col-sm-1" style="background:#9400D3;">QUARTA</th>
+                                <th class="text-center col-sm-1" style="background:#9400D3;">QUINTA</th>                                    
+                                <th class="text-center col-sm-1" style="background:#9400D3;">SEXTA</th>                                    
+                                <th class="text-center col-sm-1" style="background:#9400D3;">SÁBADO</th>                                
+                                <th class="text-center col-sm-1" style="background:#9400D3;">DOMINGO</th>                                  
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr ng-repeat="semana in semanas">
+                                <td>{{semana.segunda.dia}}</td>      
+                                <td>{{semana.terca.dia}}</td>
+                                <td>{{semana.quarta.dia}}</td>
+                                <td>{{semana.quinta.dia}}</td>
+                                <td>{{semana.sexta.dia}}</td>  
+                                <td>{{semana.sabado.dia}}</td>  
+                                <td>{{semana.domingo.dia}}</td>                    
+                            </tr>
+                        </tbody>
+                </table>         
+            </div>
+        </div>
+    </div>
+</div>
