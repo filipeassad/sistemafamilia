@@ -2,19 +2,19 @@ app.controller('CardapioCtrl',[
     '$scope',
     function($scope){
 
-    var mes = 1;
+    var mes = 3;
     var ano = 2019;
-    //$scope.semanas = angular.copy(cardapioJaneiro2018);
     $scope.semanas = gerarSemanas();
     
     function gerarSemanas(){
         var dia = 1;
         var semanas = [];
-        for(var i = 0; i < 5; i++){            
+        for(var i = 0; i < 6; i++){            
             var semana = {};
             for(var j = 0; j < 7; j++){         
-                var dataAux = new Date(ano, mes-1, dia);   
-                if(j == dataAux.getDay()){
+                var dataAux = new Date(ano, mes-1, dia);
+                var igualador = dataAux.getDay() == 0 ? 6 : dataAux.getDay() - 1;                
+                if(j == igualador){
                     insereDiaNaSemana(semana, dataAux.getDay(), dia);
                     dia++;
                 }else{
