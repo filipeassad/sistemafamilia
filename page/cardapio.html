@@ -20,13 +20,41 @@
                         </thead>
                         <tbody class="text-center">
                             <tr ng-repeat="semana in semanas">
-                                <td>{{semana.segunda.dia}}</td>      
-                                <td>{{semana.terca.dia}}</td>
-                                <td>{{semana.quarta.dia}}</td>
-                                <td>{{semana.quinta.dia}}</td>
-                                <td>{{semana.sexta.dia}}</td>  
-                                <td>{{semana.sabado.dia}}</td>  
-                                <td>{{semana.domingo.dia}}</td>                    
+                                <td ng-style="semana.segunda.estilo">
+                                    <div style="text-align: left; font-size: 8px;">{{semana.segunda.dia}}</div>                                
+                                    <div ng-style="semana.segunda.almocoEstilo">{{semana.segunda.almoco}}</div>      
+                                    <div ng-style="semana.segunda.jantaEstilo">{{semana.segunda.janta}}</div>                                
+                                </td>      
+                                <td ng-style="semana.terca.estilo">
+                                    <div style="text-align: left; font-size: 8px;">{{semana.terca.dia}}</div>
+                                    <div ng-style="semana.terca.almocoEstilo">{{semana.terca.almoco}}</div>      
+                                    <div ng-style="semana.terca.jantaEstilo">{{semana.terca.janta}}</div>       
+                                </td>
+                                <td ng-style="semana.quarta.estilo">
+                                    <div style="text-align: left; font-size: 8px;">{{semana.quarta.dia}}</div>
+                                    <div ng-style="semana.quarta.almocoEstilo">{{semana.quarta.almoco}}</div>      
+                                    <div ng-style="semana.quarta.jantaEstilo">{{semana.quarta.janta}}</div>       
+                                </td>
+                                <td ng-style="semana.quinta.estilo">
+                                    <div style="text-align: left; font-size: 8px;">{{semana.quinta.dia}}</div> 
+                                    <div ng-style="semana.quinta.almocoEstilo">{{semana.quinta.almoco}}</div>      
+                                    <div ng-style="semana.quinta.jantaEstilo">{{semana.quinta.janta}}</div>      
+                                </td>
+                                <td ng-style="semana.sexta.estilo">
+                                    <div style="text-align: left; font-size: 8px;">{{semana.sexta.dia}}</div>
+                                    <div ng-style="semana.sexta.almocoEstilo">{{semana.sexta.almoco}}</div>      
+                                    <div ng-style="semana.sexta.jantaEstilo">{{semana.sexta.janta}}</div>       
+                                </td>  
+                                <td ng-style="semana.sabado.estilo">
+                                    <div style="text-align: left; font-size: 8px;">{{semana.sabado.dia}}</div>
+                                    <div ng-style="semana.sabado.almocoEstilo">{{semana.sabado.almoco}}</div>      
+                                    <div ng-style="semana.sabado.jantaEstilo">{{semana.sabado.janta}}</div>       
+                                </td>  
+                                <td ng-style="semana.domingo.estilo">
+                                    <div style="text-align: left; font-size: 8px;">{{semana.domingo.dia}}</div>
+                                    <div ng-style="semana.domingo.almocoEstilo">{{semana.domingo.almoco}}</div>      
+                                    <div ng-style="semana.domingo.jantaEstilo">{{semana.domingo.janta}}</div>       
+                                </td>                    
                             </tr>
                         </tbody>
                 </table>         

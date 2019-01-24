@@ -33,12 +33,19 @@ var metasAlcancadasCasaFilipe = [];
 var metasAlcancadasBemEstarFilipe = [];
 
 var cardapioJaneiro2018 = [
-    {'segunda': { 'dia': ""}, 'terca': { 'dia': 1 } , 'quarta': { 'dia': 2 }, 'quinta': { 'dia': 3 }, 'sexta': { 'dia': 4 }, 'sabado': { 'dia': 5 }, 'domingo':{ 'dia': 6 }},
-    {'segunda': { 'dia': 7 }, 'terca': { 'dia': 8 } , 'quarta': { 'dia': 9 }, 'quinta': { 'dia': 10 }, 'sexta': { 'dia': 11 }, 'sabado': { 'dia': 12 }, 'domingo':{ 'dia': 13 }},
-    {'segunda': { 'dia': 14 }, 'terca': { 'dia': 15 } , 'quarta': { 'dia': 16 }, 'quinta': { 'dia': 17 }, 'sexta': { 'dia': 18 }, 'sabado': { 'dia': 19 }, 'domingo':{ 'dia': 20 }},
-    {'segunda': { 'dia': 21 }, 'terca': { 'dia': 22 } , 'quarta': { 'dia': 23 }, 'quinta': { 'dia': 24 }, 'sexta': { 'dia': 25 }, 'sabado': { 'dia': 26 }, 'domingo':{ 'dia': 27 }},
-    {'segunda': { 'dia': 28 }, 'terca': { 'dia': 29 } , 'quarta': { 'dia': 30 }, 'quinta': { 'dia': 31 }, 'sexta': { 'dia': ""}, 'sabado': { 'dia': ""}, 'domingo':{ 'dia': ""}},
-    {'segunda': { 'dia': ""}, 'terca': { 'dia': ""} , 'quarta': { 'dia': ""}, 'quinta': { 'dia': ""}, 'sexta': { 'dia': ""}, 'sabado': { 'dia': ""}, 'domingo':{ 'dia': ""}}
+    
+   { 'dataCardapio': new Date(2019, 0, 21), 'almoco': '', 'janta': 'Nuggets' },
+   { 'dataCardapio': new Date(2019, 0, 22), 'almoco': '', 'janta': 'Bife Acebolado' },
+   { 'dataCardapio': new Date(2019, 0, 23), 'almoco': '', 'janta': 'Misto quente' },
+   { 'dataCardapio': new Date(2019, 0, 24), 'almoco': '', 'janta': 'Calabresa Ac.' },
+   { 'dataCardapio': new Date(2019, 0, 25), 'almoco': '', 'janta': 'X-Burguer' },
+   { 'dataCardapio': new Date(2019, 0, 26), 'almoco': 'Lasanha', 'janta': 'Capelete' },
+   { 'dataCardapio': new Date(2019, 0, 27), 'almoco': 'Panqueca', 'janta': 'Macarrão Vermelho' },
+   { 'dataCardapio': new Date(2019, 0, 28), 'almoco': '', 'janta': 'Misto quente' },
+   { 'dataCardapio': new Date(2019, 0, 29), 'almoco': '', 'janta': 'Bife Acebolado' },
+   { 'dataCardapio': new Date(2019, 0, 30), 'almoco': '', 'janta': 'Nuggets' },
+   { 'dataCardapio': new Date(2019, 0, 31), 'almoco': '', 'janta': 'Sobá' }
+
 ];
 
 
