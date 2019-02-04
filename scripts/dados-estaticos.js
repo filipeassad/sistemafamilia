@@ -48,4 +48,17 @@ var cardapioJaneiro2018 = [
 
 ];
 
+var produtosLimpeza = [
+   { 'nome' : 'Sabão em pó', 'quantidade': 2 , 'preco': '25,00' },
+   { 'nome' : 'Amaciante', 'quantidade': 1 , 'preco': '20,00' }
+];
+
+var higienePessoal = [
+   { 'nome' : 'Pasta de dente', 'quantidade': 1 , 'preco': '2,00' },
+   { 'nome' : 'Escova de dente', 'quantidade': 1 , 'preco': '3,00' },
+   { 'nome' : 'Fio dental', 'quantidade': 1 , 'preco': '5,00' },
+   { 'nome' : 'Desodorante', 'quantidade': 2 , 'preco': '3,00' },
+   { 'nome' : 'Detergente', 'quantidade': 1 , 'preco': '1,50' }
+];
+
 
