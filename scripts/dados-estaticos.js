@@ -49,16 +49,68 @@ var cardapioJaneiro2018 = [
 ];
 
 var produtosLimpeza = [
-   { 'nome' : 'Sabão em pó', 'quantidade': 2 , 'preco': '25,00' },
-   { 'nome' : 'Amaciante', 'quantidade': 1 , 'preco': '20,00' }
+   new Produto('Sabão em pó', 2, 25.00),
+   new Produto('Amaciante', 1, 20.00)
 ];
 
 var higienePessoal = [
-   { 'nome' : 'Pasta de dente', 'quantidade': 1 , 'preco': '2,00' },
-   { 'nome' : 'Escova de dente', 'quantidade': 1 , 'preco': '3,00' },
-   { 'nome' : 'Fio dental', 'quantidade': 1 , 'preco': '5,00' },
-   { 'nome' : 'Desodorante', 'quantidade': 2 , 'preco': '3,00' },
-   { 'nome' : 'Detergente', 'quantidade': 1 , 'preco': '1,50' }
+   new Produto('Pasta de dente', 1, 2.00),
+   new Produto('Escova de dente', 1, 3.00),
+   new Produto('Fio dental', 1, 5.00),
+   new Produto('Desodorante', 2, 3.00),
+   new Produto('Detergente', 1, 1.50)
 ];
 
+var besteiras = [
+   new Produto('Aveia', 1, 5.50),
+   new Produto('Aveia em pó', 1, 3.50),
+   new Produto('Biscoito', 12, 1.50),
+   new Produto('Miojo', 4, 0.80),
+   new Produto('Leite em pó', 4, 8.50),
+   new Produto('Nescau', 3, 14.50),
+   new Produto('Chocolate', 4, 4.50)
+];
+
+var bebidas = [
+   new Produto('Suco', 4, 6.50),
+   new Produto('Coca-Cola', 4, 7.50),   
+   new Produto('Sub-Zero', 200, 1.90)
+];
+
+var comidas = [
+   new Produto('Molho de tomate', 3, 6.50),
+   new Produto('Salsicha', 2, 8.50),
+   new Produto('Pão de Forma', 1, 5.50),
+   new Produto('Macarrão', 4, 3.50),
+   new Produto('Calabresa', 4, 12.50),
+   new Produto('Massa para lasanha', 1, 6.50),
+   new Produto('Nuggets', 4, 7.50),
+   new Produto('Requeijão', 1, 3.50),
+   new Produto('Ovo', 1, 10.50),
+   new Produto('Capelete', 1, 7.50),
+   new Produto('Bacon', 2, 7.50),
+   new Produto('Champignon', 1, 7.50),
+   new Produto('Pão de Hambúrguer', 1, 6.50),
+   new Produto('Hamburguer', 4, 12.50)
+] 
+
+var legumes = [
+   new Produto('Cebola', 5, 5.50),
+   new Produto('Tomate', 2, 7.50),
+   new Produto('Alface', 1, 3.50),
+   new Produto('Gengibre', 2, 2.50)
+];
+
+var frutas = [
+   new Produto('Banana', 2, 5.50),
+   new Produto('Maçã', 2, 2.50),
+   new Produto('Melancia', 1, 15.00)
+]; 
+
+function Produto(nome, quantidade, preco){
+   this.nome = nome;
+   this.quantidade = quantidade;
+   this.preco = preco;
+   this.valorTotal = preco * quantidade;
+}
 

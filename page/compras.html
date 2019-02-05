@@ -1,4 +1,4 @@
-<div style="color: white; font-family: 'Titillium Web', sans-serif; min-height: 100%;">
+<div style="color: white; font-family: 'Titillium Web', sans-serif; margin-bottom: 50px;">
     <div ng-include="'../page/includes/navbar.html'"></div>
     <h1 style="text-align: center;">Lista de Compras</h1>
     <h5 style="text-align: center;">Listagem de que será comprando no supermercado.</h5>
@@ -19,11 +19,13 @@
                     </div>                    
                 </div> 
                 <div class="row">
-                    <div class="col-sm-12" style="margin-top: 10px;">
-                        <ul>
-                            <li>Sabão em pó | Qtd: 2 | PU: R$20,00 | PT: R$40,00</li>
-                            <li>Amaciante | Qtd: 1 | PU: R$40,00 | PT: R$40,00</li>
-                        </ul>
+                    <div class="col-sm-10 col-sm-offset-1" style="margin-top: 10px;">
+                        <div class="row" style="margin-top: 8px; font-size: 11px;" ng-repeat="produtoLimpeza in produtosLimpeza">
+                            <div class="col-sm-4" style="padding-left: 0px !important; padding-right: 0px !important;">{{produtoLimpeza.nome}}</div>
+                            <div class="col-sm-2" style="padding-left: 0px !important; padding-right: 0px !important;">Qtd: {{produtoLimpeza.quantidade}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PU: R${{produtoLimpeza.preco}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PT: R${{produtoLimpeza.valorTotal}}</div> 
+                        </div>      
                     </div>
                 </div>
             </div>
@@ -41,11 +43,13 @@
                     </div>                    
                 </div> 
                 <div class="row">
-                    <div class="col-sm-12" style="margin-top: 10px;">
-                        <ul>
-                            <li>Sabão em pó | Qtd: 2 | PU: R$20,00 | PT: R$40,00</li>
-                            <li>Amaciante | Qtd: 1 | PU: R$40,00 | PT: R$40,00</li>
-                        </ul>
+                    <div class="col-sm-10 col-sm-offset-1" style="margin-top: 10px;">
+                        <div class="row" style="margin-top: 8px; font-size: 11px;" ng-repeat="higiene in higienePessoal">
+                            <div class="col-sm-4" style="padding-left: 0px !important; padding-right: 0px !important;">{{higiene.nome}}</div>
+                            <div class="col-sm-2" style="padding-left: 0px !important; padding-right: 0px !important;">Qtd: {{higiene.quantidade}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PU: R${{higiene.preco}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PT: R${{higiene.valorTotal}}</div> 
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -63,11 +67,13 @@
                     </div>                    
                 </div> 
                 <div class="row">
-                    <div class="col-sm-12" style="margin-top: 10px;">
-                        <ul>
-                            <li>Sabão em pó | Qtd: 2 | PU: R$20,00 | PT: R$40,00</li>
-                            <li>Amaciante | Qtd: 1 | PU: R$40,00 | PT: R$40,00</li>
-                        </ul>
+                    <div class="col-sm-10 col-sm-offset-1" style="margin-top: 10px;">
+                        <div class="row" style="margin-top: 8px; font-size: 11px;" ng-repeat="comida in comidas">
+                            <div class="col-sm-4" style="padding-left: 0px !important; padding-right: 0px !important;">{{comida.nome}}</div>
+                            <div class="col-sm-2" style="padding-left: 0px !important; padding-right: 0px !important;">Qtd: {{comida.quantidade}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PU: R${{comida.preco}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PT: R${{comida.valorTotal}}</div> 
+                        </div> 
                     </div>
                 </div>
             </div>   
@@ -87,11 +93,13 @@
                     </div>                    
                 </div> 
                 <div class="row">
-                    <div class="col-sm-12" style="margin-top: 10px;">
-                        <ul>
-                            <li>Sabão em pó | Qtd: 2 | PU: R$20,00 | PT: R$40,00</li>
-                            <li>Amaciante | Qtd: 1 | PU: R$40,00 | PT: R$40,00</li>
-                        </ul>
+                    <div class="col-sm-10 col-sm-offset-1" style="margin-top: 10px;">
+                        <div class="row" style="margin-top: 8px; font-size: 11px;" ng-repeat="legume in legumes">
+                            <div class="col-sm-4" style="padding-left: 0px !important; padding-right: 0px !important;">{{legume.nome}}</div>
+                            <div class="col-sm-2" style="padding-left: 0px !important; padding-right: 0px !important;">Qtd: {{legume.quantidade}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PU: R${{legume.preco}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PT: R${{legume.valorTotal}}</div> 
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -109,11 +117,13 @@
                     </div>                    
                 </div> 
                 <div class="row">
-                    <div class="col-sm-12" style="margin-top: 10px;">
-                        <ul>
-                            <li>Sabão em pó | Qtd: 2 | PU: R$20,00 | PT: R$40,00</li>
-                            <li>Amaciante | Qtd: 1 | PU: R$40,00 | PT: R$40,00</li>
-                        </ul>
+                    <div class="col-sm-10 col-sm-offset-1" style="margin-top: 10px;">
+                        <div class="row" style="margin-top: 8px; font-size: 11px;" ng-repeat="fruta in frutas">
+                            <div class="col-sm-4" style="padding-left: 0px !important; padding-right: 0px !important;">{{fruta.nome}}</div>
+                            <div class="col-sm-2" style="padding-left: 0px !important; padding-right: 0px !important;">Qtd: {{fruta.quantidade}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PU: R${{fruta.preco}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PT: R${{fruta.valorTotal}}</div> 
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -131,11 +141,13 @@
                     </div>                    
                 </div> 
                 <div class="row">
-                    <div class="col-sm-12" style="margin-top: 10px;">
-                        <ul>
-                            <li>Sabão em pó | Qtd: 2 | PU: R$20,00 | PT: R$40,00</li>
-                            <li>Amaciante | Qtd: 1 | PU: R$40,00 | PT: R$40,00</li>
-                        </ul>
+                    <div class="col-sm-10 col-sm-offset-1" style="margin-top: 10px;">
+                        <div class="row" style="margin-top: 8px; font-size: 11px;" ng-repeat="besteira in besteiras">
+                            <div class="col-sm-4" style="padding-left: 0px !important; padding-right: 0px !important;">{{besteira.nome}}</div>
+                            <div class="col-sm-2" style="padding-left: 0px !important; padding-right: 0px !important;">Qtd: {{besteira.quantidade}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PU: R${{besteira.preco}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PT: R${{besteira.valorTotal}}</div> 
+                        </div> 
                     </div>
                 </div>
             </div>   
@@ -155,11 +167,13 @@
                     </div>                    
                 </div> 
                 <div class="row">
-                    <div class="col-sm-12" style="margin-top: 10px;">
-                        <ul>
-                            <li>Sabão em pó | Qtd: 2 | PU: R$20,00 | PT: R$40,00</li>
-                            <li>Amaciante | Qtd: 1 | PU: R$40,00 | PT: R$40,00</li>
-                        </ul>
+                    <div class="col-sm-10 col-sm-offset-1" style="margin-top: 10px;">
+                        <div class="row" style="margin-top: 8px; font-size: 11px;" ng-repeat="bebida in bebidas">
+                            <div class="col-sm-4" style="padding-left: 0px !important; padding-right: 0px !important;">{{bebida.nome}}</div>
+                            <div class="col-sm-2" style="padding-left: 0px !important; padding-right: 0px !important;">Qtd: {{bebida.quantidade}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PU: R${{bebida.preco}}</div>
+                            <div class="col-sm-3" style="padding-left: 0px !important; padding-right: 0px !important;">PT: R${{bebida.valorTotal}}</div> 
+                        </div>
                     </div>
                 </div>
             </div>             

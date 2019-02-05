@@ -2,7 +2,7 @@ app.controller('CardapioCtrl',[
     '$scope',
     function($scope){
 
-    var mes = 1;
+    var mes = 2;
     var ano = 2019;
 
     var estiloAtual = {

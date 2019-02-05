@@ -10,6 +10,7 @@ app.config(function($routeProvider) {
       templateUrl : '../page/cardapio.html',
       controller : "CardapioCtrl"
     }).when('/compras', {
-      templateUrl : '../page/compras.html'
+      templateUrl : '../page/compras.html',
+      controller : "ComprasCtrl"
     });
 });
