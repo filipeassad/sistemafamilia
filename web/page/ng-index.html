@@ -5,8 +5,10 @@
     <title>Sistema Familiar</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
+    <base href="/"> 
 </head>
 <body ng-app="SistemaFamiliarApp" style="background: #232323;">
+    <div ng-include="'page/includes/navbar.html'"></div>
     <ng-view></ng-view>
 </body>
 
@@ -14,11 +16,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-<script src="../scripts/dados-estaticos.js"></script> 
-<script src="../scripts/ng-app.js"></script> 
-<script src="../scripts/ng-route.js"></script> 
-<script src="../scripts/controllers/ng-metas-ctrl.js"></script> 
-<script src="../scripts/controllers/ng-cardapio-ctrl.js"></script> 
-<script src="../scripts/controllers/ng-compras-ctrl.js"></script> 
+<script src="scripts/dados-estaticos.js"></script> 
+<script src="scripts/ng-app.js"></script> 
+<script src="scripts/ng-route.js"></script> 
+<script src="scripts/controllers/ng-metas-ctrl.js"></script> 
+<script src="scripts/controllers/ng-cardapio-ctrl.js"></script> 
+<script src="scripts/controllers/ng-compras-ctrl.js"></script> 
 
 </html>
